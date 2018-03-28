@@ -6,7 +6,7 @@ var train = {
     minutes: [10,1154, 10, 28, 25, 4740, 3]
 }
 
-
+/*
 $(document).ready(function () {
     var date_input = $('input[name="date"]'); //our date input has the name "date"
     var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() :
@@ -19,7 +19,7 @@ $(document).ready(function () {
     };
     date_input.datepicker(options);
 })
-
+*/
 
 // Initialize Firebase
 var config = {
