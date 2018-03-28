@@ -15,25 +15,109 @@
 </head>
 
 <body>
+    <audio autoplay>
+        <source src="assets/sounds/mixaudio.mp3">
+    </audio>
+    <div class="container">
+        <div class="jumbotron">
+            <img src="assets/images/train.gif">
+            <hr>
+            <h2>Anytime is Train Time</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card border-secondary text-white bg-info ">
+            <div class='card-header' id=cardheader>
+                <strong>Current Train Schedule</strong>
+            </div>
+        </div>
+        <div class="card border-secondary ">
+            <br>
+            <div class="container">
+                <table class="table">
+                    <thead>
+                        
+                          <!-- Insert headers here -->  
+                        
+                    </thead>
+                    <tbody>
 
+                        <!-- Insert rows here -->
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
+    <br>
+    <div class="container">
+        <div class="card border-secondary text-white bg-info ">
+            <div class='card-header' id=cardheader>
+                <strong>Add Train</strong>
+            </div>
+        </div>
+        <div class="card border-secondary ">
+            <br>
+            <div class="container">
+                <div class="form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">
+                                <strong>Train Name</strong>
+                            </label>
+                            <input type="text" class="form-control" id="train name">
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">
+                                <strong>Destination</strong>
+                            </label>
+                            <input type="text" class="form-control" id="destination">
+                        </div>
+                        <div class="form-group">
 
+                            <label class="control-label" for="time">
+                                <strong>First Train Time (HH:mm - Military Time)</strong>
+                            </label>
+                            <input class="form-control" id="inputTime" name="time" type="text" />
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <strong>Frequency (min)</strong>
+                            </label>
+                            <input type="text" class="form-control" id="frequency">
+                        </div>
+                        <button type="submit" class="btn btn-secondary">
+                            <strong>Submit</strong>
+                        </button>
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--THis is a vanila code for Date Picker to the Bootstrap Form -->
+        <script>
+        </script>
 
-
-    
-    <!-- JQuery -->
+        <!-- JQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <!-- ================================================================================== -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <!-- ================================================================================== -->
 
-    <!-- Firebase JavaScript Link -->
-    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-    <script src="assets/javascript/trainjava.js"></script>
+        <!-- Firebase JavaScript Link -->
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <script src="assets/javascript/trainjava.js"></script>
+
+        <footer>
+            &copy;
+            <strong>Copyright 2018 Reinaldo Llano, Jr.</strong>
+        </footer>
 
 </body>
 
