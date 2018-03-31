@@ -20,8 +20,8 @@
     </audio>
     <div class="container">
         <div class="jumbotron jumbotron-fluid">
-        <h1>Anytime is Train Time</h1>
-        <hr>
+            <h1>Anytime is Train Time</h1>
+            <hr>
         </div>
     </div>
 
@@ -36,9 +36,13 @@
             <div class="container">
                 <table class="table">
                     <thead>
-
-                        <!-- Insert headers here -->
-
+                        <tr>
+                            <th scope='col'>Train Name</th>
+                            <th scope='col'>Destination</th>
+                            <th scope='col'>Frequency (min)</th>
+                            <th scope='col'>Next Arrival</th>
+                            <th scope='col'>Minutes Away</th>
+                        </tr>
                     </thead>
                     <tbody>
 
@@ -66,7 +70,7 @@
                             <label for="name">
                                 <strong>Train Name</strong>
                             </label>
-                            <input type="text" class="form-control" id="train name">
+                            <input type="text" class="form-control" id="name">
                         </div>
                         <div class="form-group">
                             <label for="destination">
@@ -79,7 +83,7 @@
                             <label class="control-label" for="time">
                                 <strong>First Train Time (HH:mm - Military Time)</strong>
                             </label>
-                            <input class="form-control" id="inputTime" name="time" type="text" />
+                            <input type="text" class="form-control" id="time">
                         </div>
                         <div class="form-group">
                             <label>
@@ -87,37 +91,41 @@
                             </label>
                             <input type="text" class="form-control" id="frequency">
                         </div>
-                        <button type="submit" class="btn btn-secondary">
+                        <button type="submit" class="btn btn-secondary" id="submit">
                             <strong>Submit</strong>
                         </button>
                     </form>
                     <br>
                 </div>
             </div>
+
         </div>
-        <br>
-        <!--THis is a vanila code for Date Picker to the Bootstrap Form -->
-        <script>
-        </script>
+    </div>
+<br>
 
-        <!-- JQuery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-        <!-- ================================================================================== -->
 
-        <!-- Firebase JavaScript Link -->
-        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-        <script src="assets/javascript/trainjava.js"></script>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- ================================================================================== -->
 
-        <footer>
-            &copy;
-            <strong>Copyright 2018 Reinaldo Llano, Jr.</strong>
-        </footer>
+    <!-- Firebase JavaScript Link -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-database.js"></script>
+
+    <!-- JavaScript Link -->
+    <script src="assets/javascript/trainjava.js"></script>
+
+    <footer>
+        &copy;
+        <strong>Copyright 2018 Reinaldo Llano, Jr.</strong>
+    </footer>
 
 </body>
 
