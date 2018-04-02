@@ -4,12 +4,13 @@
     background-color: #666;
     background-size: cover;
     background-image: url("../images/train.gif");
-   min-height: 640px;
+    min-height: 640px;
 }
-    
 
 hr {
     background-color: #4aaaa5;
+    width: 92%;
+    border-top-width: 4px
 }
 
 /*footer*/

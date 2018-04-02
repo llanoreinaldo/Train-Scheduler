@@ -1,35 +1,27 @@
-
-  // Initialize Firebase
-  var config = {
+/*// Initialize Firebase
+var config = {
     apiKey: "AIzaSyAnj5CeVx-Xq3EhgIy32-B8Eow6it2QXbw",
     authDomain: "homework7-6d711.firebaseapp.com",
     databaseURL: "https://homework7-6d711.firebaseio.com",
     projectId: "homework7-6d711",
     storageBucket: "homework7-6d711.appspot.com",
     messagingSenderId: "610991110557"
-  };
-
-  firebase.initializeApp(config);
- 
-// 1. Link to Firebase
-    var trainData = firebase.database(); //currently not sure it's working
-
-    // Sets Initial variables for the database
-    var trainName = ""
-    var destination = ""
-    var trainTimeInput = 'hh:mm A'
-    var frequencyInput = 0
+};
+firebase.initializeApp(config);
+*/
 
 
 $(document).ready(function () {
-    
-    // 2. Button for adding Trains
-    $("#submit").on("click", function () {
+    // 1. Link to Firebase
+    var trainData = new Firebase("https://homework7-6d711.firebaseio.com/");
 
-        // Grabs user inputs from text boxes and assign to variables
+    // 2. Button for adding Trains
+    $("#addTrainBtn").on("click", function () {
+
+        // Grabs user input and assign to variables
         var trainName = $("#trainName").val().trim();
         var destination = $("#destinationInput").val().trim();
-        var trainTimeInput = moment($("#trainTimeInput").val().trim(), "HH:mm").subtract(1, "years").format("X");;
+        var trainTimeInput = moment($("#trainTimeInput").val().trim(), "HH:mm").subtract(10, "years").format("X");;
         var frequencyInput = $("#frequencyInput").val().trim();
 
         // Test for variables entered
@@ -48,7 +40,7 @@ $(document).ready(function () {
         }
 
         // pushing trainInfo to Firebase
-        trainData.ref().push(newTrain);
+        trainData.push(newTrain);
 
         // clear text-boxes
         $("#trainName").val("");
@@ -60,7 +52,7 @@ $(document).ready(function () {
         return false;
     });
 
-    trainData.ref().on("child_added", function (childSnapshot, prevChildKey) {
+    trainData.on("child_added", function (childSnapshot, prevChildKey) {
 
         console.log(childSnapshot.val());
 
