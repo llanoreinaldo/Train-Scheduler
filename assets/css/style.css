@@ -24,3 +24,19 @@ footer {
     font-size: 12px;
     text-align: center;
 }
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 640px) { 
+body {
+    width: 550px
+}
+    
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) { 
+    body {
+        width: 650px
+    }
+ }
